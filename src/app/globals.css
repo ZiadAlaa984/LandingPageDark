@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Customize the scrollbar track */
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, black, #5D2CA8);
+    /* Added background-color for visibility */
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 4px;
+    /* Added box-shadow for visibility */
+}
+
+/* Optional: Size of the scrollbar */
+::-webkit-scrollbar {
+    width: 18px;
+    height: 12px;
+}
