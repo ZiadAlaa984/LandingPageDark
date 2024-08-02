@@ -3,8 +3,8 @@ import { useEffect, useRef } from 'react';
 import Eco from '../assets/icons/ecosystem.svg';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
-export default function Feature({ index, title, description }: {
-  index: string;
+export default function Feature({ key, title, description }: {
+  key: number;
   title: string;
   description: string;
 }) {
@@ -29,7 +29,7 @@ export default function Feature({ index, title, description }: {
   }, [offsetX, offsetY]);
 
   return (
-    <div key={index} className='border border-white/30 relative px-5 py-10 text-center rounded-xl sm:flex-1'>
+    <div key={key} className='border border-white/30 relative px-5 py-10 text-center rounded-xl sm:flex-1'>
       <motion.div
         className='absolute inset-0 border-2 border-purple-400 rounded-xl'
         style={{ maskImage: MaskImage }}
